@@ -1,22 +1,22 @@
 var today = moment();
-$("#currentDay").text(today.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+// $("#currentDay").text(today.format("dddd, MMMM Do YYYY, h:mm:ass "));
 
-var eleCurrentTime = $("#idCurrentTime");
+function timeOfDay() {
+    currentDay = setInterval(function() {
 
-console.log(eleCurrentTime);
+        today = moment();
+        $("#currentDay").text(today.format("dddd, MMMM Do YYYY, h:mm:ss a"));
 
-
-
-function pageInitialize() {
-
-    setInterval(() => {
-
-        eleCurrentTime.text(moment().format('[The current time is ]MMMM Do YYYY, h:mm:ss a'));
 
     }, 1000);
-
 }
 
+timeOfDay();
+
+// var containerEl = $(".container");
+// console.log(containerEl);
+// for (var i = 0; i < 10; i++)
+//     containerEl.append(`
 
 
-pageInitialize();
+// `);
