@@ -42,7 +42,7 @@ for (var i = 0; i < 10; i++) {
 
     </textarea>
     
-    <div class="col-1">
+    <div class="col-1 saveBtn">
     
                 </div>`)
 };
